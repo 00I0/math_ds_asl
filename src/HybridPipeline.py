@@ -1,17 +1,17 @@
 import os
 import pickle
 import warnings
-from typing import Tuple, Any, Dict, List
-import numpy as np
+from typing import Any, List
+
 import mediapipe as mp
+import numpy as np
 from PIL import Image
 from sklearn.base import TransformerMixin
-from sklearn.pipeline import Pipeline as SklearnPipeline
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.pipeline import Pipeline as SklearnPipeline
 from tqdm import tqdm
 
 from BasePipeline import BasePipeline
-from utils import get_image_paths_and_labels, compute_metrics
 
 
 class MPFeatureExtractor(TransformerMixin):

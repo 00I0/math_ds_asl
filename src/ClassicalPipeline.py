@@ -1,7 +1,7 @@
 import os
 import pickle
 import warnings
-from typing import Tuple, Any, Dict, List
+from typing import Tuple, Any, List
 import numpy as np
 from PIL import Image
 from sklearn.base import TransformerMixin
@@ -11,7 +11,6 @@ from sklearn.decomposition import PCA
 from sklearn.ensemble import RandomForestClassifier
 
 from BasePipeline import BasePipeline
-from src.utils import get_image_paths_and_labels, compute_metrics
 
 
 class ImageLoader(TransformerMixin):

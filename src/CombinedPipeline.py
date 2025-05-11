@@ -1,19 +1,14 @@
 import pickle
 import warnings
-from typing import List, Tuple, Dict
-import numpy as np
+from typing import List, Dict
 
-from PIL import Image
-from sklearn.base import TransformerMixin, BaseEstimator
 from sklearn.decomposition import PCA
-from sklearn.pipeline import FeatureUnion
+
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.pipeline import FeatureUnion, Pipeline as SklearnPipeline
-import mediapipe as mp
+
 import numpy as np
-from torchvision import transforms
-from tqdm import tqdm
 
 from BasePipeline import BasePipeline
 from ClassicalPipeline import ImageLoader
