@@ -13,7 +13,6 @@ import numpy as np
 from BasePipeline import BasePipeline
 from ClassicalPipeline import ImageLoader
 from HybridPipeline import MPFeatureExtractor
-from src.utils import get_image_paths_and_labels, compute_metrics
 
 
 class CombinedPipeline(BasePipeline):
