@@ -73,8 +73,8 @@ All pipelines implement a unified interface:
 
 ```python
 pipe = PipelineClass().load(model_path)
-pipe.train(train_dir)
-metrics = pipe.evaluate(test_dir)
+pipe.train(train_paths, train_labels)
+metrics = pipe.evaluate(test_paths, test_labels)
 ```
 
 ---
