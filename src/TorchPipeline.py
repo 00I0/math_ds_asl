@@ -74,6 +74,7 @@ class TorchPipeline(BasePipeline):
                    beta: float = 0.98, return_all: bool = False) -> float | Tuple[List[float], List[float], float]:
         """
         Find an optimal learning rate using an empirical LR range test.
+        For more details see https://fastai1.fast.ai/callbacks.lr_finder.html
 
         Returns:
             If `return_all` is True, returns (lrs, losses, suggested_lr),
